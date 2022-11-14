@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pikadu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js" defer></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js" defer></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js" defer></script>
+    <script src="/js/menu.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header_menu">
+            <img src="img/Pikadu.svg" alt="">
+            <nav class="header_menu_nav">
+                <ul class="header_menu_ul">
+                    <li class="header_menu_li"><a href="#" class="header_menu_a">Свежее</a></li>
+                    <li class="header_menu_li"><a href="#" class="header_menu_a">Лучшее</a></li>
+                    <li class="header_menu_li"><a href="#" class="header_menu_a">Горячее</a></li>
+                    <li class="header_menu_li"><a href="#" class="header_menu_a" style="margin-right: 0;">Подписки</a></li>
+                </ul>
+            </nav>
+            <div class="header_search">
+                <input type="text" class="input_search" placeholder="Поиск по сайту"> 
+                <button class="button_search">
+                    <img src="img/search.svg" alt="">
+                </button>
+            </div>
+            <a href="#" class="menu_toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </header>
+    <div class="main">
+        <main class="content_main">
+            <section class="first_post">
+                <h2 class="heading_text">Заголовок поста с интригой</h2>
+                <p class="paragraph_text"> Таким образом укрепление и развитие структуры требуют от нас анализа форм развития. Не следует, однако забывать, что реализация намеченных плановых заданий требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же консультация с широким активом способствует подготовки и реализации новых предложений. Равным образом новая модель организационной деятельности позволяет оценить значение модели развития.</p>
+                    <p class="paragraph_text">Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Таким образом рамки и место обучения кадров в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач.</p>
+                    <p class="paragraph_text">Повседневная практика показывает, что дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки форм развития. Товарищи! новая модель организационной деятельности требуют определения и уточнения форм развития. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности требуют определения и уточнения соответствующий  условий активизации.</p>
+                <div class="tags">
+                    <span class="tag">#Свежее</span>
+                    <span class="tag">#Горячее</span>
+                    <span class="tag">#Моё</span>
+                    <span class="tag">#Случайность</span>
+                </div>
+                <div class="post_footer">
+                    <div class="post_button">
+                        <button class="button_likes button_q">
+                            <svg width = "19px" height = "19px" class="icon">
+                                <use xlink:href="img/icons.svg#likes"></use>
+                              </svg>
+                            <span class="likes_counter">26</span>
+                        </button>
+                        <button class="button_comments button_q">
+                            <svg width = "21px" height = "21px" class="icon">
+                                <use xlink:href="img/icons.svg#comments"></use>
+                              </svg>
+                            <span class="comments_counter">157</span>
+                        </button>
+                        <button class="button_save button_q">
+                            <svg width = "19px" height = "19px" class="icon">
+                                <use xlink:href="img/icons.svg#save"></use>
+                              </svg>
+                        </button>
+                        <button class="button_share button_q">
+                            <svg width = "17px" height = "18px" class="icon">
+                                <use xlink:href="img/icons.svg#share"></use>
+                              </svg>
+                        </button>
+                    </div>
+                    <div class="post_author">
+                        <div class="author_about">
+                            <a href="#" class="author_name">arteislamov</a>
+                            <span class="text_time">5 минут назад</span>
+                        </div>
+                        <a href="#" class="author_link"><img src="img/avatar.jpg" alt="" class="author_img"></a>
+                    </div>
+                </div>
+            </section>
+            <section class="first_post">
+                <h2 class="heading_text">Заголовок поста с интригой</h2>
+                <p class="paragraph_text"> Таким образом укрепление и развитие структуры требуют от нас анализа форм развития. Не следует, однако забывать, что реализация намеченных плановых заданий требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же консультация с широким активом способствует подготовки и реализации новых предложений. Равным образом новая модель организационной деятельности позволяет оценить значение модели развития.</p>
+                    <p class="paragraph_text">Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Таким образом рамки и место обучения кадров в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач.</p>
+                    <p class="paragraph_text">Повседневная практика показывает, что дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки форм развития. Товарищи! новая модель организационной деятельности требуют определения и уточнения форм развития. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности требуют определения и уточнения соответствующий  условий активизации.</p>
+                <div class="tags">
+                    <span class="tag">#Свежее</span>
+                    <span class="tag">#Горячее</span>
+                    <span class="tag">#Моё</span>
+                    <span class="tag">#Случайность</span>
+                </div>
+                <div class="post_footer">
+                    <div class="post_button">
+                        <button class="button_likes button_q">
+                            <svg width = "19px" height = "19px" class="icon">
+                                <use xlink:href="img/icons.svg#likes"></use>
+                              </svg>
+                            <span class="likes_counter">26</span>
+                        </button>
+                        <button class="button_comments button_q">
+                            <svg width = "21px" height = "21px" class="icon">
+                                <use xlink:href="img/icons.svg#comments"></use>
+                              </svg>
+                            <span class="comments_counter">157</span>
+                        </button>
+                        <button class="button_save button_q">
+                            <svg width = "19px" height = "19px" class="icon">
+                                <use xlink:href="img/icons.svg#save"></use>
+                              </svg>
+                        </button>
+                        <button class="button_share button_q">
+                            <svg width = "17px" height = "18px" class="icon">
+                                <use xlink:href="img/icons.svg#share"></use>
+                              </svg>
+                        </button>
+                    </div>
+                    <div class="post_author">
+                        <div class="author_about">
+                            <a href="#" class="author_name">arteislamov</a>
+                            <span class="text_time">5 минут назад</span>
+                        </div>
+                        <a href="#" class="author_link"><img src="img/avatar.jpg" alt="" class="author_img"></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <form action="#" class="new_post">
+            <input type="text" class="new_post_title" placeholder="Заголовок поста" name="title">
+            <textarea  id="text" class="new_post_text" placeholder="Текст вашего поста" name="text"></textarea>
+            <input type="text" class="new_post_title" id="tags" placeholder="Введите теги" name="tags">
+         <div class="buttons">
+            <button type="submit" class="new_post_public">
+             <svg class="icon fire_icon">
+                 <use xlink:href="img/icons.svg#fire"></use>
+               </svg>
+               Опубликовать пост
+            </button>
+            <button class="button_video-media">
+                <svg class="icon icons_video-media">
+                    <use xlink:href="/img/icons.svg#video"></use>
+                  </svg>
+                Видео</button>
+            <button class="button_video-media">
+                <svg class="icon icons_video-media">
+                    <use xlink:href="/img/icons.svg#Img"></use>
+                  </svg>
+                Фото</button>
+         </div>
+         </form>
+        <form action="#" class="new_post">
+            <input type="text" class="new_post_title" placeholder="Заголовок поста" name="title">
+            <textarea  id="text" class="new_post_text" placeholder="Текст вашего поста" name="text"></textarea>
+            <input type="text" class="new_post_tags" placeholder="Добавьте теги" name="tags">
+         <div class="buttons">
+            <button type="submit" class="new_post_public">
+             <svg class="icon fire_icon">
+                 <use xlink:href="img/icons.svg#fire"></use>
+               </svg>
+               Опубликовать пост
+            </button>
+         </div>
+         </form>
+        <aside class="content_aside">
+            <div class="login">
+                <form class="login_form">
+                    <h2 class="login_title">Авторизация</h2>
+                    <input type="email" name="email" minlength="3" required class="login_email login_input" 
+                    placeholder="Ввести email">
+                    <input type="password" name="password" minlength="3" required class="login_password login_input"
+                    placeholder="Ввести пароль">
+                    <a href="#" class="login_forget">Забыли пароль?</a>
+                    <button type="submit" class="login_signin">Войти</button>
+                    <button class="login_signup">
+                        <a href="#" class="login_signup_text">Регистрация</a>
+                    </button>
+                </form>
+            </div>
+
+            <div class="user">
+                <div class="user_container">
+                    <div class="user_info">
+                        <img height="40" width="40" src="img/avatar.jpg" alt="" class="user_avatar">
+                        <span class="user_name">islamovartem</span>
+                    </div>
+                    <a href="#" class="edit">
+                        <img src="img/edit-button.svg" alt="" class="icons_edit">
+                    </a>
+                    <a href="#" class="user_exit">
+                        <svg class="icon exit_button">
+                            <use xlink:href="img/icons.svg#Exit"></use>
+                          </svg>
+                    </a>
+                </div>
+                <form class="form_edit">
+                    <h2 class="title_edit">Редактировать</h2>
+                    <label class="edit_label"> Ваш логин
+                        <input type="text" class="edit_input edit_username" placeholder="Логин" minlength="3" name="user name" required> 
+                    </label>
+                    <label class="edit_label"> Ваше фото
+                        <input type="text" class="edit_input edit_photo" placeholder="URL фото" name="user photo">
+                    </label>
+                    <button class="edit_button">Сохранить</button>
+                </form>
+            </div>
+            <nav class="sidebar_nav">
+                <ul class="sidebar_menu">
+                    <li class="sidebar_menu_item">
+                        <a href="#" class="sidebar_text">Ответы</a>
+                    </li>
+                    <li class="sidebar_menu_item">
+                        <a href="#" class="sidebar_text">Комментарии</a>
+                    </li>
+                    <li class="sidebar_menu_item">
+                        <a href="#" class="sidebar_text">Оценки</a>
+                    </li>
+                    <li class="sidebar_menu_item">
+                        <a href="#" class="sidebar_text">Сохраненное</a>
+                    </li>
+                    <li class="sidebar_menu_item">
+                        <a href="#" class="sidebar_text">Подписки</a>
+                    </li>
+                    <li class="sidebar_menu_item">
+                        <a href="#" class="sidebar_text">Заметки</a>
+                    </li>
+                    <li class="sidebar_menu_item">
+                        <a href="#" class="sidebar_text">Игнор-лист</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="button_public">
+                <a href="#" class="public_text">
+                    <svg class="icon fire_icon">
+                        <use xlink:href="img/icons.svg#fire"></use>
+                      </svg>
+                    Опубликовать пост</a>
+            </button>
+            <div class="card">
+                <div class="card_header">
+                    <h2 class="card_header_title">Комментарий дня</h2>
+                </div>
+                <div class="card_body">
+                    <h3 class="card_body_title">Как обмануть банкомат, если вы хотите снять больше наличных</h3>
+                    <p class="card_body_text">
+                        Таким образом укрепление и развитие структуры требуют от нас анализа форм развития. Не следует, однако забывать, что реализация намеченных плановых заданий требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же консультация...
+                    </p>
+                </div>
+            </div>
+            <div class="marketing"></div>
+        </aside>
+    </div>
+</body>
+</html>

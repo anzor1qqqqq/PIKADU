@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pikadu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script defer src="/js/menu.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header_menu">
+            <a href="/index.html"><img src="img/Pikadu.svg" alt="" ></a>
+            <nav class="header_menu_nav">
+                <ul class="header_menu_ul">
+                    <li class="header_menu_li"><a href="#" class="header_menu_a">Свежее</a></li>
+                    <li class="header_menu_li"><a href="#" class="header_menu_a">Лучшее</a></li>
+                    <li class="header_menu_li"><a href="#" class="header_menu_a">Горячее</a></li>
+                    <li class="header_menu_li"><a href="#" class="header_menu_a" style="margin-right: 0;">Подписки</a></li>
+                </ul>
+            </nav>
+            <div class="header_search">
+                <input type="text" class="input_search" placeholder="Поиск по сайту"> 
+                <button class="button_search">
+                    <img src="img/search.svg" alt="">
+                </button>
+            </div>
+            <a href="#" class="menu_toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </header>
+    <div class="main">
+        <main class="content_main">
+           <form action="#" class="new_post">
+               <input type="text" class="new_post_title" placeholder="Заголовок поста" name="post_title">
+               <textarea name="post_text" id="text" class="new_post_text" placeholder="Текст вашего поста"></textarea>
+            <div class="buttons">
+               <button type="submit" class="new_post_public">
+                <svg class="icon fire_icon">
+                    <use xlink:href="img/icons.svg#fire"></use>
+                  </svg>
+                  Опубликовать пост
+               </button>
+               <button class="button_video-media">
+                <svg class="icon icons_video-media">
+                    <use xlink:href="/img/icons.svg#Img"></use>
+                  </svg>
+                   Видел</button>
+               <button class="button_video-media">
+                <svg class="icon icons_video-media">
+                    <use xlink:href="/img/icons.svg#video"></use>
+                  </svg>
+                   Фото</button>
+            </div>
+            </form>
+        </main>
+        <aside class="content_aside">
+            <div class="user">
+                <div class="user_info">
+                    <img height="40" width="40" src="img/avatar.jpg" alt="" class="user_avatar">
+                    <span class="user_name">islamovartem</span>
+                </div>
+                <a href="#" class="user_exit">
+                    <svg class="icon exit_button">
+                        <use xlink:href="img/icons.svg#Exit"></use>
+                      </svg>
+                </a>
+            </div>
+            <nav class="sidebar_nav">
+                <ul class="sidebar_menu">
+                    <li class="sidebar_menu_item">
+                        <a href="#" class="sidebar_text">Ответы</a>
+                    </li>
+                    <li class="sidebar_menu_item">
+                        <a href="#" class="sidebar_text">Комментарии</a>
+                    </li>
+                    <li class="sidebar_menu_item">
+                        <a href="#" class="sidebar_text">Оценки</a>
+                    </li>
+                    <li class="sidebar_menu_item">
+                        <a href="#" class="sidebar_text">Сохраненное</a>
+                    </li>
+                    <li class="sidebar_menu_item">
+                        <a href="#" class="sidebar_text">Подписки</a>
+                    </li>
+                    <li class="sidebar_menu_item">
+                        <a href="#" class="sidebar_text">Заметки</a>
+                    </li>
+                    <li class="sidebar_menu_item">
+                        <a href="#" class="sidebar_text">Игнор-лист</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+</body>
+</html>
