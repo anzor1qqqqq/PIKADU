@@ -287,3 +287,5 @@ newPostElem.addEventListener('submit', event => {
 showPost();
 toggleAuthDom();
 
+let num = 0;
+
